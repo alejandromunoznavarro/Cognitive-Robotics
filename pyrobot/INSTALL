@@ -1,0 +1,26 @@
+Building Pyrobot
+----------------
+
+This version of Pyrobot requires the use of Python 3.6 or greater.  
+
+Pyrobot depends on a number of python libraries, the names of the
+packages which you need to install in Ubuntu 20 are:
+
+  python3-tk python3-pil python3-pil.imagetk python3-numpy
+
+Once you have installed those dependencies, run:
+
+  python3 ./configure.py
+
+Then run:
+
+  make
+
+This will produce a locally installed working version of pyrobot.  To
+make pyrobot easier to use, you will also need to edit some
+environmental variables (in the case of unix with bash, here are the
+commands to add to your .bashrc)
+
+export PYROBOT=<oath to your installation>/pyrobot
+export PYTHONPATH=$PYROBOT:$PYTHONPATH
+export PATH=$PATH:$PYROBOT/bin
